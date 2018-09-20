@@ -1,0 +1,5 @@
+Bundle-Name: angular-users-portlet
+Bundle-SymbolicName: com.jpdacunha.angular.users.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.jpdacunha.angular.users.portlet.constants
+Web-ContextPath: /angular-users-portlet
