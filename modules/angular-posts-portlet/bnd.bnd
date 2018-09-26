@@ -1,0 +1,5 @@
+Bundle-Name: angular-posts-portlet
+Bundle-SymbolicName: angular-posts-portlet
+Bundle-Version: 1.0.0
+Export-Package: com.jpdacunha.angular.posts.portlet.portlet.constants
+Web-ContextPath: /angular-posts-portlet
