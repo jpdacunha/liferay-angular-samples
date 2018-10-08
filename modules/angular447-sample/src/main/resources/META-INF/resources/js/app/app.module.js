@@ -4,7 +4,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-define(["require", "exports", "@angular/core", "@angular/platform-browser", "@angular/forms", "@angular/common/http", "./services/post.service", "./components/posts/posts.component", "./app.component"], function (require, exports, core_1, platform_browser_1, forms_1, http_1, post_service_1, posts_component_1, app_component_1) {
+define(["require", "exports", "@angular/core", "@angular/platform-browser", "@angular/http", "./services/context.loader.service", "./app.component"], function (require, exports, core_1, platform_browser_1, http_1, context_loader_service_1, app_component_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var AppModule = /** @class */ (function () {
@@ -18,17 +18,15 @@ define(["require", "exports", "@angular/core", "@angular/platform-browser", "@an
             core_1.NgModule({
                 imports: [
                     platform_browser_1.BrowserModule,
-                    http_1.HttpClientModule,
-                    forms_1.FormsModule
+                    http_1.HttpModule
                 ],
                 declarations: [
-                    app_component_1.AppComponent,
-                    posts_component_1.PostsComponent
+                    app_component_1.AppComponent
                 ],
                 entryComponents: [app_component_1.AppComponent],
                 bootstrap: [],
                 providers: [
-                    post_service_1.PostService
+                    context_loader_service_1.ContextLoaderService
                 ]
             })
         ], AppModule);

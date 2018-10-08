@@ -1,11 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response } from '@angular/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Post } from '../models/Post';
 
 
 const httpOptions = {
-  headers: new Headers({'Content-type':'application/json'})
+  headers: new HttpHeaders({'Content-type':'application/json'})
 }
 
 @Injectable()
@@ -13,10 +12,10 @@ export class PostService {
 
   postUrl: string = 'https://jsonplaceholder.typicode.com/posts';
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
-  getPosts(): Observable<Post[]> {
-    return this.http.get(this.postUrl).map((res : Response) => <Post[]>res.json());
+  getPosts() {
+    return this.http.get<Post[]>(this.postUrl);
   }
 
   /*savePost(post: Post): Observable<Post> {

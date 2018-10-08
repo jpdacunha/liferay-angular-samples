@@ -1,0 +1,11 @@
+Bundle-Name: angular447-sample
+Bundle-SymbolicName: com.liferay.blade.npm.angular447.portlet
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.blade.npm.angular447.portlet.constants
+Web-ContextPath: /angular447-sample
+-jsp: *.jsp,*.jspf
+-plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
+-plugin.npm: com.liferay.ant.bnd.npm.NpmAnalyzerPlugin
+-plugin.resourcebundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
+-plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
+-sass: *

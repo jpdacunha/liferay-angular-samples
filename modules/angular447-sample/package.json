@@ -52,9 +52,9 @@
 		"typescript": "2.5.2"
 	},
 	"main": "js/angular-loader.js",
-	"name": "angular-posts-portlet",
+	"name": "angular447-sample",
 	"scripts": {
-		"build": "tsc && babel --source-maps -d build/resources/main/META-INF/resources src/main/resources/META-INF/resources && liferay-npm-bundler"
+		"build": "tsc && babel --source-maps -d target/classes/META-INF/resources src/main/resources/META-INF/resources && liferay-npm-bundler"
 	},
 	"version": "1.0.0"
 }

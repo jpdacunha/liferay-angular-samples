@@ -1,26 +1,23 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { PostService } from './services/post.service';
-import { PostsComponent } from './components/posts/posts.component';
+import { Injectable } from '@angular/core';
+import { HttpModule} from "@angular/http";
 
+import { ContextLoaderService } from './services/context.loader.service';
 import { AppComponent }  from './app.component';
 
 @NgModule({
 	imports: [
 		BrowserModule,
-		HttpClientModule,
-		FormsModule
+		HttpModule
 	],
 	declarations: [
-		AppComponent,
-		PostsComponent
+		AppComponent
 	],
 	entryComponents: [AppComponent],
 	bootstrap: [], // Do not bootstrap anything (see ngDoBootstrap() below)
 	providers: [
-		PostService
+		ContextLoaderService
 	]
 })
 export class AppModule {

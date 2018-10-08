@@ -1,0 +1,4 @@
+{
+    "output": "target/classes/META-INF/resources",
+    "preset": "liferay-npm-bundler-preset-angular"
+}
